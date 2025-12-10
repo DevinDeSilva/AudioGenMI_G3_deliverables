@@ -36,8 +36,8 @@ Our framework consists of two main stages:
 ### Setup
 ```bash
 # Clone the repository
-git clone [https://github.com/yourusername/generative-audio-inversion.git](https://github.com/yourusername/generative-audio-inversion.git)
-cd generative-audio-inversion
+git clone https://github.com/DevinDeSilva/AudioGenMI.git
+cd AudioGenMI
 
 # Install dependencies
 pip install -r requirements.txt
