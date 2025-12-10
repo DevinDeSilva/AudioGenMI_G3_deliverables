@@ -217,7 +217,9 @@ __marimo__/
 .neptune
 
 # Folder
-images/*
-models/*
-inverted_samples/*
+*.packaging
+*.pth
+*.png
+models/pretrain_hifigan/*
+*.pt
 mel_spectrograms_comp.png
