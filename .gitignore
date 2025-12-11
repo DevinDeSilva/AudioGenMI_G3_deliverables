@@ -222,4 +222,5 @@ __marimo__/
 *.png
 models/pretrain_hifigan/*
 *.pt
+*.gz
 mel_spectrograms_comp.png
