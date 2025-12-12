@@ -7,8 +7,8 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.10+-ee4c2c.svg)](https://pytorch.org/)
 
 ## Resources
-[Report](Report/AudioMI_G3_Report.pdf)
-[Inverted Samples and Model Saves](https://drive.google.com/drive/folders/1uxwEYjZH9Es582MMqcqQ0vGjquZzJXBX?usp=drive_link)
+1. [Report](Report/AudioMI_G3_Report.pdf)
+2. [Inverted Samples and Model Saves](https://drive.google.com/drive/folders/1uxwEYjZH9Es582MMqcqQ0vGjquZzJXBX?usp=drive_link)
 
 ## 📝 Abstract
 
