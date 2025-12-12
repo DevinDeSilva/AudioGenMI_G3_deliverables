@@ -46,7 +46,6 @@ from tqdm import tqdm
 load_dotenv()
 cuda = True if torch.cuda.is_available() else False
 
-ROOT_DIR = "tacotron2"
 import torch.nn as nn
 import torch.optim as optim
 from typing import Optional, Tuple, List
@@ -651,7 +650,7 @@ DNN2_net.cuda()
 
 print(os.getcwd())
 # %%
-load_dict = torch.load('/home/desild/work/academic/sem3/TrustworthyML-assignment/tacotron2/vctk/models/SINCNET_SR/20251129_142613/checkpoint.pth', weights_only=False)
+load_dict = torch.load('models/SINCNET_SR/20251129_142613/checkpoint.pth', weights_only=False)
 
 CNN_net.load_state_dict(load_dict["CNN_net"])
 DNN1_net.load_state_dict(load_dict["DNN1_net"])

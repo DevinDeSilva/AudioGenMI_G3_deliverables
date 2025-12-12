@@ -651,7 +651,7 @@ DNN2_net.cuda()
 
 print(os.getcwd())
 # %%
-load_dict = torch.load('/home/desild/work/academic/sem3/TrustworthyML-assignment/tacotron2/vctk/models/SINCNET_SR/20251129_142613/checkpoint.pth', weights_only=False)
+load_dict = torch.load('models/SINCNET_SR/20251129_142613/checkpoint.pth', weights_only=False)
 
 CNN_net.load_state_dict(load_dict["CNN_net"])
 DNN1_net.load_state_dict(load_dict["DNN1_net"])
@@ -955,7 +955,7 @@ class ImgDiscriminator(nn.Module):
 compound_model = SincNetCompound(CNN_net, DNN1_net, DNN2_net)
 compound_model.cuda()
 
-gen_weight = torch.load("/home/desild/work/academic/sem3/TrustworthyML-assignment/tacotron2/vctk/models/HIFIGAN_ADV/20251130_070154/checkpoint.pth")
+gen_weight = torch.load("models/HIFIGAN_ADV/20251130_070154/checkpoint.pth")
 
 generator = Generator()
 hifigan = HIFIGenerator(hifigan_config)

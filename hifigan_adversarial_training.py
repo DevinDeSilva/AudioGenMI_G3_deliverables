@@ -734,7 +734,7 @@ DNN2_arch_sr = {'input_dim':fc_lay[-1] ,
 DNN2_net_sr=MLP(DNN2_arch_sr)
 DNN2_net_sr.cuda()
 
-sr_weight = torch.load("/home/desild/work/academic/sem3/TrustworthyML-assignment/tacotron2/vctk/models/SINCNET_SR/20251129_142613/checkpoint.pth", weights_only=False)
+sr_weight = torch.load("models/SINCNET_SR/20251129_142613/checkpoint.pth", weights_only=False)
 CNN_net_sr.load_state_dict(sr_weight['CNN_net'])
 DNN1_net_sr.load_state_dict(sr_weight['DNN1_net'])
 DNN2_net_sr.load_state_dict(sr_weight['DNN2_net'])
