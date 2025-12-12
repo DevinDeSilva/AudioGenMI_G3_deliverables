@@ -45,6 +45,7 @@ The files are locared in [`dataset_utils`](/dataset_utils)
 ### 4. Download and extract the pretrained models available in the gdrive link available in Resources section to `models/` folder (Contains all the models I trained + pretrainining weights of hifigan originally available in [here](https://github.com/jik876/hifi-gan))
 
 ### 5. Train main speaker recognition model and evaluation models (optional since step 3 downloads my pretrains)
+
 ```bash
 # Speaker recognition model training
 python train_sincnet.py
@@ -60,17 +61,49 @@ python train_accent.py
 ```
 
 ### 6. Train GAI model (optional since step 3 downloads my pretrains)
+
+To train the Generative model using VCTK dataset
 ```bash
+
 python hifigan_adversarial_training.py
+```
+
+To train the Generative model using the VoxCeleb1 dataset (used for the transfer experiment of the paper)
+
+```bash
+
+python hifigan_adversarial_training_voxceleb.py
 ```
 
 ### 7. Run Model Inversion baseline methods (I have added the inverted samples I generated in the gdrive link available in Resources section).
 
+```bash
+python model_inversion_attack_sincnet.py
+```
+
 ### 8. Run Model Inversion our method (I have added the inverted samples I generated in the gdrive link available in Resources section).
 #### Note: The files are setup such that they use the weights I trained and available in the google drive. if you trained your own please change the filee paths to use that weights you trained
 
+To perform the model inversion attack using Generative model trained on VCTK dataset 
+```bash
+python gan_model_inversion_attack.py
+```
+
+To perform the model inversion attack using the Generative model trained on VoxCeleb1 dataset (used for the transfer experiment of the paper)
+```bash
+python gan_model_inversion_attack_with_transfer.py
+```
+
+To perform the model inversion attack using the GAI and STD (used for the combined attack experiment of the paper)
+```bash
+python gan_model_inversion_attack_with_std.py
+```
+
 ### 9. Run evaluation.
-#### Note: The files are setup such that they use the weights I trained and available in the google drive. if you trained your own please change the filee paths to use that weights you trained
+#### Note: The files are setup such that they use the weights I trained and available in the google drive. if you trained your own please change the filee paths to use that weights you trained.
+
+Run the python notebook `analysis_results.ipynb`.
+
 
 ## 📝 Abstract
 
