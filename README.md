@@ -6,6 +6,10 @@
 [![Python](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.10+-ee4c2c.svg)](https://pytorch.org/)
 
+## Resources
+[Report](Report/AudioMI_G3_Report.pdf)
+[Inverted Samples and Model Saves](https://drive.google.com/drive/folders/1uxwEYjZH9Es582MMqcqQ0vGjquZzJXBX?usp=drive_link)
+
 ## 📝 Abstract
 
 This repository hosts the code for the paper **Generative Audio Inversion (GAI)**. We introduce a novel framework that adapts Generative Model Inversion (GMI) to the acoustic domain to reconstruct high-fidelity speaker representations from a target Speaker Recognition System (specifically SincNet).
