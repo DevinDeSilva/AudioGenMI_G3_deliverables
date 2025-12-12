@@ -40,17 +40,17 @@ source download_data.sh
 
 ### 3. Run Data-preprocessing. This contains the part where the datasets are 
 
-### 3. Download and extract the pretrained models available in the gdrive link available in Resources section to `models/` folder (Contains all the models I trained + pretrainining weights of hifigan originally available in [here](https://github.com/jik876/hifi-gan))
+### 4. Download and extract the pretrained models available in the gdrive link available in Resources section to `models/` folder (Contains all the models I trained + pretrainining weights of hifigan originally available in [here](https://github.com/jik876/hifi-gan))
 
-### 4. train main speaker recognition model and evaluation models (optional since step 3 downlods my pretrains)
+### 5. train main speaker recognition model and evaluation models (optional since step 3 downlods my pretrains)
 
-### 5. Train GAI model (optional since step 3 downlods my pretrains)
+### 6. Train GAI model (optional since step 3 downlods my pretrains)
 
-### 6. Run Model Inversion baseline methods (I have added the inverted samples I generated in the gdrive link available in Resources section).
+### 7. Run Model Inversion baseline methods (I have added the inverted samples I generated in the gdrive link available in Resources section).
 
-### 7. Run Model Inversion our method (I have added the inverted samples I generated in the gdrive link available in Resources section).
+### 8. Run Model Inversion our method (I have added the inverted samples I generated in the gdrive link available in Resources section).
 
-### 8. Run evaluation.
+### 9. Run evaluation.
 
 
 ## 📝 Abstract
