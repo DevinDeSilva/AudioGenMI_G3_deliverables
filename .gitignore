@@ -223,4 +223,8 @@ __marimo__/
 models/pretrain_hifigan/*
 *.pt
 *.gz
+*.zip
 mel_spectrograms_comp.png
+data/vctk_dataset
+data/darpa_timit_dataset
+data/vox1_dev_dataset
