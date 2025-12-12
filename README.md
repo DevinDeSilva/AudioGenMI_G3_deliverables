@@ -40,18 +40,37 @@ source download_data.sh
 
 ### 3. Run Data-preprocessing. This contains the part where the datasets are 
 
+The files are locared in [`dataset_utils`](/dataset_utils)
+
 ### 4. Download and extract the pretrained models available in the gdrive link available in Resources section to `models/` folder (Contains all the models I trained + pretrainining weights of hifigan originally available in [here](https://github.com/jik876/hifi-gan))
 
-### 5. train main speaker recognition model and evaluation models (optional since step 3 downlods my pretrains)
+### 5. Train main speaker recognition model and evaluation models (optional since step 3 downloads my pretrains)
+```bash
+# Speaker recognition model training
+python train_sincnet.py
 
-### 6. Train GAI model (optional since step 3 downlods my pretrains)
+# Gender Recognition (for evaluation)
+python train_gender.py
+
+# Age Recognition (for evaluation)
+python train_age.py
+
+# Accent Recognition (for evaluation)
+python train_accent.py
+```
+
+### 6. Train GAI model (optional since step 3 downloads my pretrains)
+```bash
+python hifigan_adversarial_training.py
+```
 
 ### 7. Run Model Inversion baseline methods (I have added the inverted samples I generated in the gdrive link available in Resources section).
 
 ### 8. Run Model Inversion our method (I have added the inverted samples I generated in the gdrive link available in Resources section).
+#### Note: The files are setup such that they use the weights I trained and available in the google drive. if you trained your own please change the filee paths to use that weights you trained
 
 ### 9. Run evaluation.
-
+#### Note: The files are setup such that they use the weights I trained and available in the google drive. if you trained your own please change the filee paths to use that weights you trained
 
 ## 📝 Abstract
 
